@@ -5,4 +5,11 @@
     <string name="search">Search</string>
     <string name="search_through_the_bilion_devices_and_stay_secure_no_one_watching_you">Search through the bilion devices and stay secure. No one watching you</string>
     <string name="start">start</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 </resources>
