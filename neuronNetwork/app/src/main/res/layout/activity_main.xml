@@ -5,4 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/search"
+        android:contentDescription="@string/search_through_all_devices" />
+
 </RelativeLayout>

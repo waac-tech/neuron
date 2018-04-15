@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">neuron</string>
+    <string name="search_through_all_devices">search through all devices.</string>
 </resources>
