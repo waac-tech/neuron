@@ -49,7 +49,6 @@ public class SecondActivity extends AppCompatActivity {
         android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.content, new HomeFragment()).commit();
 
-
     }
 
 }
