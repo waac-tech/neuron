@@ -2,6 +2,7 @@ package world.waac.neuron;
 
 import android.content.Context;
 import android.net.wifi.WifiManager;
+import android.net.wifi.p2p.WifiP2pManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,8 @@ public class SecondActivity extends AppCompatActivity {
     EditText writeMsg;
 
     WifiManager wifiManager;
+    WifiP2pManager mManager;
+    WifiP2pManager.Channel mChannel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +40,10 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(wifiManager.isWifiEnabled()){
                     wifiManager.setWifiEnabled(false);
+                    btnOnOff.setText("on");
                 } else {
                     wifiManager.setWifiEnabled(true);
+                    btnOnOff.setText("off");
                 }
             }
         });
@@ -64,6 +69,8 @@ public class SecondActivity extends AppCompatActivity {
 
         //wifi managing
         wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+
+        mManager = (WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE);
 
     }
 }
