@@ -31,5 +31,8 @@ public class SecondActivity extends AppCompatActivity {
         btnOnOff = (Button) findViewById(R.id.onOff);
         btnDiscover = (Button) findViewById(R.id.discover);
         btnSend = (Button) findViewById(R.id.sendButton);
+
+        //initial list of peer
+        listView = (ListView) findViewById(R.id.peerListView);
     }
 }
