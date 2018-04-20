@@ -1,7 +1,10 @@
 package world.waac.neuron;
 
+import android.content.Context;
+import android.net.wifi.WifiManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -14,7 +17,7 @@ public class SecondActivity extends AppCompatActivity {
     TextView read_msg_box, connectiomStatus;
     EditText writeMsg;
 
-
+    WifiManager wifiManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,23 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         
         initialWork();
+        
+        exqListener();
+
+
+    }
+
+    private void exqListener() {
+        btnOnOff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(wifiManager.isWifiEnabled()){
+                    wifiManager.setWifiEnabled(false);
+                } else {
+                    wifiManager.setWifiEnabled(true);
+                }
+            }
+        });
     }
 
     private void initialWork() {
@@ -41,6 +61,9 @@ public class SecondActivity extends AppCompatActivity {
 
         //initial EditText
         writeMsg = (EditText) findViewById(R.id.writeMsg);
+
+        //wifi managing
+        wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 
     }
 }
