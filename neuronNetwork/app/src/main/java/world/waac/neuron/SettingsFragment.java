@@ -71,6 +71,14 @@ public class SettingsFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        initialWork();
+    }
+
+    private void initialWork() {
+        btnOnOff = (Button) getView().findViewById(R.id.onOff);
+        btnDiscover =(Button) getView().findViewById(R.id.discover);
+        btnSend = (Button) getView().findViewById(R.id.sendButton);
     }
 
     @Override
