@@ -7,6 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -74,6 +78,12 @@ public class SettingsFragment extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
+
+    Button btnOnOff, btnDiscover, btnSend;
+    ListView listView;
+    TextView read_msg_box, ConnectionStatus;
+    EditText writeMsg;
+
 
     @Override
     public void onAttach(Context context) {
