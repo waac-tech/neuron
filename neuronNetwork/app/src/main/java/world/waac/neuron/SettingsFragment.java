@@ -60,7 +60,7 @@ public class SettingsFragment extends Fragment {
 
     Button btnOnOff, btnDiscover, btnSend;
     ListView listView;
-    TextView read_msg_box, ConnectionStatus;
+    TextView read_msg_box, connectionStatus;
     EditText writeMsg;
 
 
@@ -76,9 +76,16 @@ public class SettingsFragment extends Fragment {
     }
 
     private void initialWork() {
+        //button initializing
         btnOnOff = (Button) getView().findViewById(R.id.onOff);
         btnDiscover =(Button) getView().findViewById(R.id.discover);
         btnSend = (Button) getView().findViewById(R.id.sendButton);
+
+        //initial boxes and inputs
+        listView = (ListView) getView().findViewById(R.id.peerListView);
+        read_msg_box = (TextView) getView().findViewById(R.id.readMsg);
+        connectionStatus = (TextView) getView().findViewById(R.id.connectionStatus);
+        writeMsg = (EditText) getView().findViewById(R.id.writeMsg);
     }
 
     @Override
