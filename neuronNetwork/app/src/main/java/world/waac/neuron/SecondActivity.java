@@ -34,5 +34,10 @@ public class SecondActivity extends AppCompatActivity {
 
         //initial list of peer
         listView = (ListView) findViewById(R.id.peerListView);
+
+        //initial TextView
+        read_msg_box = (TextView) findViewById(R.id.readMsg);
+        connectiomStatus = (TextView) findViewById(R.id.connectionStatus);
+
     }
 }
