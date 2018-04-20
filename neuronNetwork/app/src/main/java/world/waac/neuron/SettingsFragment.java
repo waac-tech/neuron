@@ -56,6 +56,14 @@ public class SettingsFragment extends Fragment {
         return fragment;
     }
 
+
+
+    Button btnOnOff, btnDiscover, btnSend;
+    ListView listView;
+    TextView read_msg_box, ConnectionStatus;
+    EditText writeMsg;
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,10 +87,6 @@ public class SettingsFragment extends Fragment {
         }
     }
 
-    Button btnOnOff, btnDiscover, btnSend;
-    ListView listView;
-    TextView read_msg_box, ConnectionStatus;
-    EditText writeMsg;
 
 
     @Override
