@@ -39,5 +39,8 @@ public class SecondActivity extends AppCompatActivity {
         read_msg_box = (TextView) findViewById(R.id.readMsg);
         connectiomStatus = (TextView) findViewById(R.id.connectionStatus);
 
+        //initial EditText
+        writeMsg = (EditText) findViewById(R.id.writeMsg);
+
     }
 }
