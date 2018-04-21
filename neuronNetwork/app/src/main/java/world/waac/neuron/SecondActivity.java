@@ -123,7 +123,7 @@ public class SecondActivity extends AppCompatActivity {
 
         WifiP2pManager.PeerListListener peerListListener = new WifiP2pManager.PeerListListener() {
             @Override
-            public void onPeersAvailable(WifiP2pDeviceList wifiP2pDeviceList) {
+            public void onPeersAvailable(WifiP2pDeviceList peerList) {
 
 
 
