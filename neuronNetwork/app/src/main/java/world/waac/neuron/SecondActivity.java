@@ -63,12 +63,12 @@ public class SecondActivity extends AppCompatActivity {
                 mManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
                     @Override
                     public void onSuccess() {
-                        
+                        connectiomStatus.setText("Discovery Started");
                     }
 
                     @Override
                     public void onFailure(int reason) {
-
+                        connectiomStatus.setText("Discovery Failed");
                     }
                 });
             }
