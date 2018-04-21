@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.IntentFilter;
 import android.net.wifi.WifiManager;
+import android.net.wifi.p2p.WifiP2pDevice;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -27,6 +31,9 @@ public class SecondActivity extends AppCompatActivity {
 
     BroadcastReceiver mReceiver;
     IntentFilter mIntentFilter;
+
+    //for getting the list of available decice
+    List<WifiP2pDevice> peers = new ArrayList<WifiP2pDevice>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
