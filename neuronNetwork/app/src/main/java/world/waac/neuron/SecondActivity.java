@@ -55,10 +55,22 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
+        // Discovery method
         btnDiscover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                mManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
+                    @Override
+                    public void onSuccess() {
+                        
+                    }
+
+                    @Override
+                    public void onFailure(int reason) {
+
+                    }
+                });
             }
         });
 
