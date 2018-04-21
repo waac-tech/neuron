@@ -54,6 +54,14 @@ public class SecondActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btnDiscover.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
     }
 
     private void initialWork() {
