@@ -55,5 +55,4 @@
         android:textColorLink="@android:color/background_light"
         android:textSize="18sp" />
 
-
 </RelativeLayout>
