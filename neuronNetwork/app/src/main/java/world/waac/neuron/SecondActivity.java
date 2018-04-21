@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -145,6 +146,13 @@ public class SecondActivity extends AppCompatActivity {
 
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, deviceNameArray);
                     listView.setAdapter(adapter);
+
+                }
+
+                if(peers.size() == 0){
+
+                    Toast.makeText(getApplicationContext(), "No Peer Finded", Toast.LENGTH_SHORT).show();
+                    return;
 
                 }
 
