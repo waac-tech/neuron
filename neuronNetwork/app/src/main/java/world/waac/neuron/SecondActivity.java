@@ -125,7 +125,9 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onPeersAvailable(WifiP2pDeviceList peerList) {
 
+                if (!peerList.getDeviceList().equals(peers)){
 
+                }
 
             }
         };
