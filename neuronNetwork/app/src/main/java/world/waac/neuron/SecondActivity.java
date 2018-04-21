@@ -34,6 +34,8 @@ public class SecondActivity extends AppCompatActivity {
 
     //for getting the list of available decice
     List<WifiP2pDevice> peers = new ArrayList<WifiP2pDevice>();
+    String[] deviceNameArray;
+    WifiP2pDevice[] deviceArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
