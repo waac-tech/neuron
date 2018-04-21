@@ -22,7 +22,7 @@
         android:layout_alignBaseline="@+id/onOff"
         android:layout_alignBottom="@+id/onOff"
         android:layout_centerHorizontal="true"
-        android:text="discover" />
+        android:text="@string/Discover" />
 
     <ListView
         android:id="@+id/peerListView"
@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/peerListView"
         android:layout_marginTop="31dp"
-        android:text="Message"
+        android:text="@string/message"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="italic" />
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:text="Send" />
+        android:text="@string/send" />
 
     <TextView
         android:id="@+id/connectionStatus"
@@ -71,7 +71,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="15dp"
-        android:text="Connection Status"
+        android:text="@string/connection_status"
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="18sp"

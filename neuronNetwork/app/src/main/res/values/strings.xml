@@ -20,4 +20,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="wifi_on">Wifi On</string>
+    <string name="Discover">discover</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="connection_status">Connection Status</string>
 </resources>
