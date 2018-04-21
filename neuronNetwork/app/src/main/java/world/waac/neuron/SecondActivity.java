@@ -128,6 +128,17 @@ public class SecondActivity extends AppCompatActivity {
                 if (!peerList.getDeviceList().equals(peers)){
                         peers.clear();
                         peers.addAll(peerList.getDeviceList());
+
+                        deviceNameArray = new String[peerList.getDeviceList().size()];
+                        deviceArray = new WifiP2pDevice[peerList.getDeviceList().size()];
+
+                        int index = 0;
+
+                        for (WifiP2pDevice device : peerList.getDeviceList()){
+
+
+
+                        }
                 }
 
             }
