@@ -1,5 +1,6 @@
 package world.waac.neuron;
 
+import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.IntentFilter;
@@ -41,6 +42,7 @@ public class SecondActivity extends AppCompatActivity {
 
     private void exqListener() {
         btnOnOff.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 if(wifiManager.isWifiEnabled()){
