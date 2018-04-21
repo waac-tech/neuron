@@ -1,6 +1,8 @@
 package world.waac.neuron;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.IntentFilter;
 import android.net.wifi.WifiManager;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +23,9 @@ public class SecondActivity extends AppCompatActivity {
     WifiManager wifiManager;
     WifiP2pManager mManager;
     WifiP2pManager.Channel mChannel;
+
+    BroadcastReceiver mReceiver;
+    IntentFilter mIntentFilter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +76,10 @@ public class SecondActivity extends AppCompatActivity {
         wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 
         mManager = (WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE);
+        mChannel = mManager.initialize(this,getMainLooper(),null);
+
+        //make object from WifiDirectBroudcastReceiver
+        mReceiver = new WifiDirectBroadcastReceiver(mManager, mChannel, this);
 
     }
 }
