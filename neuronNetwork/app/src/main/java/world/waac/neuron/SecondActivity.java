@@ -137,7 +137,8 @@ public class SecondActivity extends AppCompatActivity {
                         for (WifiP2pDevice device : peerList.getDeviceList()){
 
                             deviceNameArray[index] = device.deviceName;
-
+                            deviceArray[index] = device;
+                            index++;
 
                         }
                 }
