@@ -91,8 +91,8 @@ public class SecondActivity extends AppCompatActivity {
         });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long 1) {
+            @Override //check the long it was 1 and I change it to l to fix error tempprary
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 final WifiP2pDevice device = deviceArray[i];
                 WifiP2pConfig config = new WifiP2pConfig();
