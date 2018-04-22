@@ -21,6 +21,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -188,7 +189,17 @@ public class SecondActivity extends AppCompatActivity {
         WifiP2pManager.ConnectionInfoListener connectionInfoListener = new WifiP2pManager.ConnectionInfoListener() {
             @Override
             public void onConnectionInfoAvailable(WifiP2pInfo wifiP2pInfo) {
+                final InetAddress groupOwnerAddress = wifiP2pInfo.groupOwnerAddress;
 
+                if (wifiP2pInfo.groupFormed && wifiP2pInfo.isGroupOwner){
+
+                    connectiomStatus.setText("HOST");
+
+                } else if (wifiP2pInfo.groupFormed){
+
+                    connectiomStatus.setText("CLIENT");
+
+                }
             }
         };
 
