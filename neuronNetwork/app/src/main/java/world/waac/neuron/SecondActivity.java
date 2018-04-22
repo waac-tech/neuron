@@ -104,7 +104,7 @@ public class SecondActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(int reason) {
-
+                        Toast.makeText(getApplicationContext(),"Not Connected",Toast.LENGTH_SHORT).show();
                     }
                 });
             }
