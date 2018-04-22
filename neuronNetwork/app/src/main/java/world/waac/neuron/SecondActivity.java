@@ -99,7 +99,7 @@ public class SecondActivity extends AppCompatActivity {
                 mManager.connect(mChannel, config, new WifiP2pManager.ActionListener() {
                     @Override
                     public void onSuccess() {
-
+                        Toast.makeText(getApplicationContext(),"Connected to"+device.deviceName, Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
