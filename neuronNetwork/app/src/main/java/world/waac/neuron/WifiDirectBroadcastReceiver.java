@@ -47,13 +47,19 @@ public class WifiDirectBroadcastReceiver extends BroadcastReceiver {
 
         } else if (WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION.equals(action)){
 
-            if (mManager = null){
+            if (mManager == null){
                 return;
             }
 
             NetworkInfo networkInfo = intent.getParcelableExtra(WifiP2pManager.EXTRA_NETWORK_INFO);
 
             if (networkInfo.isConnected()){
+
+                mManager.requestConnectionInfo(mChannel, mActivity.connectionInfoListener);
+
+            } else {
+
+                mActivity.connectiomStatus.setText("Device is Disconnected");
 
             }
 
