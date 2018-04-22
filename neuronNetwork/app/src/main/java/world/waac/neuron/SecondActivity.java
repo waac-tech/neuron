@@ -215,4 +215,9 @@ public class SecondActivity extends AppCompatActivity {
             super.onPause();
             unregisterReceiver(mReceiver);
         }
+
+        // inner class for socket codes
+        public class ServerClass extends Thread {
+
+        }
 }
