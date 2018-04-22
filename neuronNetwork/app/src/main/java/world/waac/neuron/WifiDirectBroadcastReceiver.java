@@ -53,6 +53,10 @@ public class WifiDirectBroadcastReceiver extends BroadcastReceiver {
 
             NetworkInfo networkInfo = intent.getParcelableExtra(WifiP2pManager.EXTRA_NETWORK_INFO);
 
+            if (networkInfo.isConnected()){
+
+            }
+
         }else if (WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION.equals(action)){
 
         }
