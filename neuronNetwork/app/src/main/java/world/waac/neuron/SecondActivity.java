@@ -252,7 +252,11 @@ public class SecondActivity extends AppCompatActivity {
 
             @Override
             public void run(){
-                socket.connect(new InetSocketAddress(hostAdd,));
+                try {
+                    socket.connect(new InetSocketAddress(hostAdd, 8888),500);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 }
