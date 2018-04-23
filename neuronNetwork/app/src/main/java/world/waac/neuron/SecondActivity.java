@@ -67,7 +67,15 @@ public class SecondActivity extends AppCompatActivity {
     Handler handler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
-            return false;
+            switch (msg.what){
+
+                case MESSAGE_READ:
+                    byte[] readBuff = (byte[]) msg.obj;
+                    String tempMsg = new String(readBuff, 0, msg.arg1);
+                    read_msg_box.setText(tempMsg);
+                    break;
+            }
+            return true;
         }
     });
 
