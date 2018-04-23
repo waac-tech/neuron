@@ -35,7 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="145dp"
         android:fontFamily="@font/roboto_mono_medium"
-        android:text="@string/search_through_the_bilion_devices_and_stay_secure_no_one_watching_you"
+        android:text="@string/look_world_through_the_wifi"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="20sp" />

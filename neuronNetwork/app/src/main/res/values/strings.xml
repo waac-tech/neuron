@@ -3,7 +3,6 @@
     <string name="search_through_all_devices">search through all devices.</string>
     <string name="search_through_the_bilion_devices">Search through the bilion devices.</string>
     <string name="search">Search</string>
-    <string name="search_through_the_bilion_devices_and_stay_secure_no_one_watching_you">Search through the bilion devices and stay secure. No one watching you</string>
     <string name="start">start</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -24,4 +23,5 @@
     <string name="message">Message</string>
     <string name="send">Send</string>
     <string name="connection_status">Connection Status</string>
+    <string name="look_world_through_the_wifi">look world through the wifi.</string>
 </resources>
