@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="#454d57"
     tools:context=".MainActivity">
 
     <ImageView
@@ -14,8 +14,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/search"
-        android:contentDescription="@string/search_through_the_bilion_devices" />
+        android:contentDescription="@string/search_through_the_bilion_devices"
+        app:srcCompat="@drawable/search" />
 
     <TextView
         android:id="@+id/textView"
@@ -47,7 +47,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="59dp"
-        android:background="#3cba54"
+        android:background="#68b1bd"
         android:fontFamily="@font/roboto_mono_medium"
         android:text="@string/start"
         android:textColor="@android:color/white"
