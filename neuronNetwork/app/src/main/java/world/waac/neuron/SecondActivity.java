@@ -146,7 +146,8 @@ public class SecondActivity extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String msg = writeMsg.getText().toString();
+                sendReceive.write(msg.getBytes());
             }
         });
 
@@ -268,7 +269,7 @@ public class SecondActivity extends AppCompatActivity {
             public void run(){
                 try {
 
-                    serverSocket = new ServerSocket(88888);
+                    serverSocket = new ServerSocket(8888);
                     socket = serverSocket.accept();
                     sendReceive = new SendReceive(socket);
                     sendReceive.start();
