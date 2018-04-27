@@ -108,6 +108,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 mManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void onSuccess() {
                         connectiomStatus.setText("Discovery Started");
