@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <!--color of action bar-->
+    <color name="colorPrimary">#4885ed</color>
+    <!--color of notification Bar-->
+    <color name="colorPrimaryDark">#454d57</color>
+    <!--color of screen-->
     <color name="colorAccent">#4885ed</color>
 </resources>
