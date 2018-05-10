@@ -1,3 +1,3 @@
 #neuron network
 
-network base on Internet.
+network base on WIFI.
