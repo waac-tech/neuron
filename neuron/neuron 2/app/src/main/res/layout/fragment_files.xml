@@ -24,6 +24,8 @@
         android:layout_marginRight="@dimen/dimen_20"
         android:src="@drawable/ic_add"
         android:tint="@android:color/white"
-        app:backgroundTint="@color/colorPrimary" />
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_20" />
 
 </RelativeLayout>
