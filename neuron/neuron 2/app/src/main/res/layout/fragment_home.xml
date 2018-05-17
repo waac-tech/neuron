@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-80dp"
         android:gravity="center"
-        android:text="Neuron"
+        android:text="@string/neuron"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
         android:textSize="26sp"
