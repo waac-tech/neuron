@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#464e59"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -31,6 +31,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/dimen_10"
             android:text="Look world through the wifi"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/font_15" />
 
         <Button
