@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/floating_search_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:gravity="center"
+        android:text="Neuron"
+        android:textSize="@dimen/font_20" />
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        app:floatingSearch_dimBackground="@android:color/transparent"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_searchBarMarginLeft="@dimen/dimen_5"
+        app:floatingSearch_searchBarMarginRight="@dimen/dimen_5"
+        app:floatingSearch_searchBarMarginTop="@dimen/dimen_5"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_showVoiceInput="true"
+        app:floatingSearch_suggestionsListAnimDuration="250" />
+
+
+</RelativeLayout>

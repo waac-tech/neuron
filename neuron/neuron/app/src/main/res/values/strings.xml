@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Neuron</string>
+    <string name="title_activity_my_wifi">MyWifiActivity</string>
+    <string name="neuron">Neuron</string>
+    <string name="find_devices">Find Devices</string>
+    <string name="my_device_info">"My device info: "</string>
+    <string name="wifi_p2p_status">"Wifi P2P Status: "</string>
+    <string name="___">---</string>
+    <string name="send_msg">Send Msg</string>
+    <string name="title_activity_find_device">FindDeviceActivity</string>
+    <string name="devices">Devices:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_files_to_share">Add files to share</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMain">#F5F5F5</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="tint1">#aae121</color>
+    <color name="tint2">#2154e1</color>
+    <color name="tint3">#e12164</color>
+    <color name="tint4">#e16721</color>
+</resources>
