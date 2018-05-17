@@ -19,4 +19,11 @@
     <string name="let_s_go">Let\'s go</string>
     <string name="wifi_icon">wifi Icon</string>
     <string name="discover">Discover</string>
+    <string name="connect">connect</string>
+    <string name="disconnect">disconnect</string>
+    <string name="connecting">Connect</string>
+    <string name="image">IMAGE</string>
+    <string name="file">file</string>
+    <string name="pdf">pdf</string>
+    <string name="video">VIDEO</string>
 </resources>
