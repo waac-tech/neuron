@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#464e59"
@@ -16,7 +17,8 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/dimen_30"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -30,7 +32,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/dimen_10"
-            android:text="Look world through the wifi"
+            android:text="@string/look_world_through_the_wifi"
             android:textColor="@android:color/white"
             android:textSize="@dimen/font_15" />
 
@@ -42,9 +44,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/dimen_40"
             android:backgroundTint="@color/colorPrimary"
-            android:text="Let's go"
+            android:text="@string/let_s_go"
             android:textAllCaps="false"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            tools:targetApi="lollipop" />
 
     </RelativeLayout>
 
