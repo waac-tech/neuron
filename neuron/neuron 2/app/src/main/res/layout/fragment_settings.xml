@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#464e59"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,11 +13,11 @@
         android:elevation="8dp"
         android:orientation="vertical"
         android:paddingBottom="8dp">
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_devices"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            ></android.support.v7.widget.RecyclerView>
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 
@@ -26,7 +26,7 @@
         android:layout_height="@dimen/dimen_150"
         android:layout_gravity="center_horizontal"
         android:layout_margin="@dimen/dimen_30"
-        android:background="@drawable/bk_discover"
+        android:background="#464e59"
         android:orientation="vertical">
 
         <ImageView
