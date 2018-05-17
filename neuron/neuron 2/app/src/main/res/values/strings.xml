@@ -17,4 +17,6 @@
     <string name="logo">LOGO</string>
     <string name="look_world_through_the_wifi">Look world through the wifi</string>
     <string name="let_s_go">Let\'s go</string>
+    <string name="wifi_icon">wifi Icon</string>
+    <string name="discover">Discover</string>
 </resources>

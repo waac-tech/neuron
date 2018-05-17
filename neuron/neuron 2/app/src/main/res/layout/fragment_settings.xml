@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#464e59"
@@ -12,12 +13,13 @@
         android:background="@color/colorMain"
         android:elevation="8dp"
         android:orientation="vertical"
-        android:paddingBottom="8dp">
+        android:paddingBottom="8dp"
+        tools:targetApi="lollipop">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_devices"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
@@ -35,7 +37,8 @@
             android:layout_alignTop="@id/btn_discover"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="-40dp"
-            android:src="@drawable/ic_wifi" />
+            android:src="@drawable/ic_wifi"
+            android:contentDescription="@string/wifi_icon" />
 
         <Button
             android:id="@+id/btn_discover"
@@ -43,9 +46,10 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:backgroundTint="@color/colorPrimary"
-            android:text="Discover"
+            android:text="@string/discover"
             android:textAllCaps="false"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            tools:targetApi="lollipop" />
 
     </RelativeLayout>
 
