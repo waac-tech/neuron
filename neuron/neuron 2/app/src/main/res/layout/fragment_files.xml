@@ -9,7 +9,7 @@
         android:id="@+id/rv_files"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#464e59">
+        android:background="@android:color/white">
 
     </android.support.v7.widget.RecyclerView>
 

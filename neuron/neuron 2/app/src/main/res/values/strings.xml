@@ -26,4 +26,6 @@
     <string name="file">file</string>
     <string name="pdf">pdf</string>
     <string name="video">VIDEO</string>
+    <string name="get">Get</string>
+    <string name="files">Files</string>
 </resources>

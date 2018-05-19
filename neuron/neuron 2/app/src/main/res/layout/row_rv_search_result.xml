@@ -14,7 +14,8 @@
         android:layout_height="40dp"
         android:src="@drawable/ic_image"
         android:tint="@color/tint1"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="@string/image" />
 
     <ImageView
         android:id="@+id/img_type_text"
@@ -22,7 +23,8 @@
         android:layout_height="40dp"
         android:src="@drawable/ic_description"
         android:tint="@color/tint2"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="@string/files" />
 
     <ImageView
         android:id="@+id/img_type_pdf"
@@ -30,7 +32,8 @@
         android:layout_height="40dp"
         android:src="@drawable/ic_picture_as_pdf"
         android:tint="@color/tint3"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="@string/pdf" />
 
     <ImageView
         android:id="@+id/img_type_other"
@@ -38,7 +41,8 @@
         android:layout_height="40dp"
         android:src="@drawable/ic_note"
         android:tint="@color/tint4"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:contentDescription="@string/video" />
 
     <TextView
         android:id="@+id/text_file_path"
@@ -51,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="Get"
+        android:text="@string/get"
         android:textAllCaps="false"
         android:textColor="@android:color/white" />
 
