@@ -2,6 +2,7 @@ package world.waac.neuron.fragments;
 
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -12,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.waac.neuron.R;
 import world.waac.neuron.activities.MainActivity;
@@ -27,6 +29,7 @@ import butterknife.OnClick;
  */
 @SuppressLint("ValidFragment")
 public class SettingsFragment extends Fragment {
+
 
 
     @BindView(R.id.rv_devices)
@@ -56,12 +59,17 @@ public class SettingsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
+
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_settings, container, false);
 
         ButterKnife.bind(this, rootView);
 
         return rootView;
+
+
     }
 
     @Override

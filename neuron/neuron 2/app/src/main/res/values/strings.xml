@@ -13,7 +13,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_files_to_share">Add files to share</string>
-    <string name="neuron">Neuron</string>
     <string name="logo">LOGO</string>
     <string name="look_world_through_the_wifi">Look world through the wifi</string>
     <string name="let_s_go">Let\'s go</string>
@@ -29,4 +28,9 @@
     <string name="get">Get</string>
     <string name="files">Files</string>
     <string name="button">Button</string>
+    <string name="message">message</string>
+    <string name="wifi_on">wifiOn</string>
+    <string name="Discover">Discover</string>
+    <string name="send">send</string>
+    <string name="connection_status">ConnectionStatus</string>
 </resources>
