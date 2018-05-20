@@ -21,6 +21,8 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.waac.neuron.R;
 import world.waac.neuron.globals.DeviceManager;
@@ -56,6 +58,8 @@ import static world.waac.neuron.transfer.TransferConstants.DEVICE_CONNECTING;
 import static world.waac.neuron.transfer.TransferConstants.DEVICE_DISCONNECTED;
 
 public class MainActivity extends FragmentActivity implements WifiP2pManager.PeerListListener, WifiP2pManager.ConnectionInfoListener {
+
+
 
     @BindView(R.id.pager)
     ViewPager viewPager;
@@ -169,6 +173,7 @@ public class MainActivity extends FragmentActivity implements WifiP2pManager.Pee
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         ButterKnife.bind(this);
 

@@ -14,11 +14,10 @@
         <ImageView
             android:layout_width="@dimen/dimen_100"
             android:layout_height="@dimen/dimen_100"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="@dimen/dimen_30"
-            android:src="@drawable/logo"
-            android:contentDescription="@string/logo" />
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -31,7 +30,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/dimen_10"
             android:text="@string/look_world_through_the_wifi"
             android:textColor="@android:color/white"
             android:textSize="@dimen/font_15" />
