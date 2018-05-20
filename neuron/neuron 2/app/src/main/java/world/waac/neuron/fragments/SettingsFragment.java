@@ -61,9 +61,9 @@ public class SettingsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
 
-
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_settings, container, false);
+
 
         ButterKnife.bind(this, rootView);
 
